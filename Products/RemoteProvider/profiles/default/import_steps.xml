@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<import-steps>
+
+<import-step 
+    id="RemoteProvider-GS-dependencies" 
+    handler="Products.RemoteProvider.setuphandlers.installGSDependencies"
+    title="Dependend GS profiles for RemoteProvider"
+    version="2008-03-04T14:52:15.206861">
+   <dependency step="plone-final"/>
+   <dependency step="RemoteProvider-QI-dependencies"/>
+   Install Generic Setup profile dependencies for RemoteProvider
+ </import-step>
+
+ <import-step 
+    id="RemoteProvider-QI-dependencies" 
+    handler="Products.RemoteProvider.setuphandlers.installQIDependencies"
+    title="Dependend QI installables for RemoteProvider"
+    version="2008-03-04T14:52:15.206861">
+   Install quickinstaller dependencies for RemoteProvider
+ </import-step>
+ 
+     
+
+
+ <import-step 
+    id="RemoteProvider-Update-RoleMappings" 
+    handler="Products.RemoteProvider.setuphandlers.updateRoleMappings"
+    title="Update Workflow role mappings for RemoteProvider"
+    version="2008-03-04T14:52:15.206861">
+   <dependency step="RemoteProvider-QI-dependencies"/>
+   updates the workflow role mappings for RemoteProvider
+ </import-step>
+
+ <import-step 
+    id="RemoteProvider-postInstall" 
+    handler="Products.RemoteProvider.setuphandlers.postInstall"
+    title="manual coded post-install for RemoteProvider"
+    version="2008-03-04T14:52:15.206861">
+   <dependency step="RemoteProvider-QI-dependencies"/>
+   manual coded post-install for RemoteProvider
+ </import-step>
+
+<!-- ##code-section ADDITIONALSTEPS -->
+
+<!-- ##/code-section ADDITIONALSTEPS --> 
+
+</import-steps>
+ 

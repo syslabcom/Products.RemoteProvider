@@ -1,0 +1,12 @@
+Products.RemoteProvider Changelog
+=================================
+
+Products.RemoteProvider 1.1 (2009-05-12)
+----------------------------------------
+
+- Packaged egg (pilz)
+
+Products.RemoteProvider 1.0 (2008-03-31)
+----------------------------------------
+
+- Initial port

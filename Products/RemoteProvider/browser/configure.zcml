@@ -1,0 +1,20 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:browser="http://namespaces.zope.org/browser"
+           xmlns:five="http://namespaces.zope.org/five">
+
+    <interface
+        interface=".interfaces.IThemeSpecific"
+        type="zope.publisher.interfaces.browser.IBrowserSkinType"
+        name="RemoteProvider"
+        />
+
+    <browser:page
+        for="*"
+        name="vocabulary_helper"
+        class=".VocabularyHelper.VocabularyHelper"
+        permission="zope.Public"
+        allowed_interface=".interfaces.IVocabularyHelper"
+        layer=".interfaces.IThemeSpecific"
+        />
+
+</configure>

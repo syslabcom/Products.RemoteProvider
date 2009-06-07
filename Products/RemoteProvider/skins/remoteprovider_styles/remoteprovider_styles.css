@@ -1,0 +1,15 @@
+#riskassessment-infobox {
+
+}
+#searchfields { background-color: #F3F6FF; border: 1px solid gray !important; padding:5px 10px; clear: both; overflow: hidden; }
+.column1 { float: left; width: 40%; padding-right: 10px; }
+.column2 { float: right; width: 55%; padding-left: 10px; border-left: 1px dotted gray; }
+.fieldSizer { width: 300px; overflow: hidden; } 
+.columnTop { width: 100%; padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px dotted gray; }
+.columnBottom { width: 100%; padding-top: 10px; margin-top: 10px; border-top: 1px dotted gray; }
+
+.column1 input { width: 100%; }
+.column2 input, .column2 select { width: 300px; }
+#resulttable {background-color: #C4DAFF; border: 1px solid gray !important;  margin:5px 0px; padding:0px; border-collapse: collapse; }
+#resulttable td {margin:0px; padding:5px; }
+#tableheader, #tableheader td {background-color: #F3F6FF; font-weight: bold; padding:5px}

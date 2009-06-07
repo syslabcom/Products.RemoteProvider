@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    xmlns:five="http://namespaces.zope.org/five">
+
+    <configure zcml:condition="installed gocept.linkchecker">
+        <adapter factory=".lmsretrievers.RemoteProviderRetriever"/>
+    </configure>
+
+    <configure zcml:condition="installed Products.TextIndexNG3">
+        <adapter factory=".textindex_adapters.RemoteProviderContentAdapter"/>
+    </configure>
+
+</configure> 

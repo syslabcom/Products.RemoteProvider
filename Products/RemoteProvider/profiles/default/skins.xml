@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<object name="portal_skins"
+        meta_type="Plone Skins Tool"
+        allow_any="False"
+        cookie_persistence="False"
+        request_varname="plone_skin">
+
+ <object name="remoteprovider_images"
+         meta_type="Filesystem Directory View"
+         directory="RemoteProvider/skins/remoteprovider_images"/>
+ <object name="remoteprovider_styles"
+         meta_type="Filesystem Directory View"
+         directory="RemoteProvider/skins/remoteprovider_styles"/>
+ <object name="remoteprovider_templates"
+         meta_type="Filesystem Directory View"
+         directory="RemoteProvider/skins/remoteprovider_templates"/>
+ 
+ <skin-path name="Plone Default">
+  <layer insert-after="custom" 
+         name="remoteprovider_images"/>
+  <layer insert-after="custom" 
+         name="remoteprovider_styles"/>
+  <layer insert-after="custom" 
+         name="remoteprovider_templates"/>
+ </skin-path>
+
+</object>
