@@ -1,6 +1,11 @@
 Products.RemoteProvider Changelog
 =================================
 
+Products.RemoteProvider 1.2 (2009-06-19)
+----------------------------------------
+
+- Added test layer (gerken)
+
 Products.RemoteProvider 1.1 (2009-05-12)
 ----------------------------------------
 
