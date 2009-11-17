@@ -1,6 +1,11 @@
 Products.RemoteProvider Changelog
 =================================
 
+1.2.1 (2009-11-17)
+------------------
+
+- Use osha.theme's CMFContentAdapter for the textindexng3 adapter
+
 Products.RemoteProvider 1.2 (2009-06-19)
 ----------------------------------------
 
