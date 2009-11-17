@@ -63,5 +63,4 @@ setup(name='Products.RemoteProvider',
       entry_points="""
       # -*- entry_points -*- 
       """,
-      paster_plugins = ["ZopeSkel"],
       )
