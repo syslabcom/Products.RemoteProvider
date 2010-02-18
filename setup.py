@@ -32,7 +32,8 @@ long_description = (
     '********\n'
     )
 
-tests_require=['zope.testing']
+tests_require=['zope.testing',
+              ]
 
 setup(name='Products.RemoteProvider',
       version=version,
@@ -56,7 +57,7 @@ setup(name='Products.RemoteProvider',
       include_package_data=True,
       zip_safe=False,
       install_requires=['setuptools',
-                        # -*- Extra requirements: -*-
+                        'Products.LinguaPlone',
                         ],
       tests_require=tests_require,
       extras_require=dict(tests=tests_require),

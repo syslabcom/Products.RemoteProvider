@@ -5,6 +5,7 @@
   <include file="profiles.zcml" />
 
   <include package=".browser" />
+  <include package="Products.LinguaPlone" />
 
   <include package=".adapters" file="configure.zcml"/>
 
