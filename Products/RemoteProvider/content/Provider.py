@@ -73,6 +73,7 @@ schema = Schema((
     ),
     StringField(
         name='providerCategory',
+        languageIndependent=True,
         widget=SelectionWidget(
             label=_(u'remoteprovider_providerCategory_label', default=u"Provider Category"),
             description=_(u'remoteprovider_providerCategory_description', default=u"Specify the category this provider belongs to"),
