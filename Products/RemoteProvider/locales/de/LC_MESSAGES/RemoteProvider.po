@@ -1,0 +1,339 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: RemoteProvider\n"
+"POT-Creation-Date: 2008-02-05 09:19+0000\n"
+"PO-Revision-Date: Thu Dec  6 15:16:31 2007\n"
+"Last-Translator: Alexander Pilz <info@syslab.com>\n"
+"Language-Team: Alexander Pilz <info@syslab.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: de\n"
+"Language-Name: German\n"
+"Preferred-Encodings: utf-8\n"
+"Domain: RemoteProvider\n"
+
+#. Default: "The contact persons postal address."
+#: content/Provider.py
+msgid "RemoteProvider_help_address"
+msgstr "Postalische Adresse der Kontaktperson."
+
+#. Default: "Specify the category this provider belongs to"
+#: content/Provider.py
+msgid "RemoteProvider_help_category"
+msgstr "Geben Sie die Kategorie dieses Anbieters an."
+
+#. Default: "The name of the person which people can contact."
+#: content/Provider.py
+msgid "RemoteProvider_help_contact_name"
+msgstr "Name der Kontaktperson"
+
+#. Default: "Check if applicable"
+#: content/RemoteProvider.py
+msgid "RemoteProvider_help_contents"
+msgstr "Bitte zutreffendes auswählen"
+
+#. Default: "The country this provider resides in."
+#: content/Provider.py
+msgid "RemoteProvider_help_country"
+msgstr "Sitz des Anbieters."
+
+#. Default: "A short descriptive text which describes this provider."
+#: content/Provider.py
+msgid "RemoteProvider_help_description"
+msgstr "Eine kurze Beschreibung des Anbieters."
+
+#. Default: "The contact persons fax number."
+#: content/Provider.py
+msgid "RemoteProvider_help_fax"
+msgstr "Faxnummer der Kontaktperson."
+
+#. Default: "pick the type of the medium"
+#: content/RemoteProvider.py
+msgid "RemoteProvider_help_medium"
+msgstr "Bitte wählen Sie den Medientyp."
+
+#. Default: "Select one or more values"
+#: content/RemoteProvider.py
+msgid "RemoteProvider_help_nace"
+msgstr "Wählen Sie einen oder mehrere Werte."
+
+#. Default: "Select one or more entries"
+#: content/RemoteProvider.py
+msgid "RemoteProvider_help_occupation"
+msgstr "Bitte wählen Sie einen oder mehrere Einträge."
+
+#. Default: "The contact persons phone number."
+#: content/Provider.py
+msgid "RemoteProvider_help_phone"
+msgstr "Telefonnummer der Kontaktperson."
+
+#. Default: "Select one or more values"
+#: content/RemoteProvider.py
+msgid "RemoteProvider_help_provider"
+msgstr "Bitte wählen Sie einen oder mehrere Einträge."
+
+#. Default: "Select one or more values"
+#: content/RemoteProvider.py
+msgid "RemoteProvider_help_riskfactors"
+msgstr "Treffen Sie die Zuordnung zu Gefährdungsfaktoren nur, wenn diese Handlungshilfen nur für spezielle Gefährdungsfaktoren (bspw. ausschließlich für Gefahrstoffe), geeignet ist. Deckt die Handlungshilfe den kompletten Gefährdungskatalog ab, ist eine explizite Zuordnung zu unterlassen."
+
+#. Default: "Select one or more values"
+#: content/RemoteProvider.py
+msgid "RemoteProvider_help_sector"
+msgstr "Bitte wählen Sie einen oder mehrere Einträge."
+
+#. Default: "Can be used without existing knowledge in occupational safety and health."
+#: content/RemoteProvider.py
+msgid "RemoteProvider_help_small_company"
+msgstr "Ohne weitere Arbeitschutzkenntnisse anwendbar"
+
+#. Default: "Can be used without existing knowledge in occupational safety and health."
+#: content/RemoteProvider.py
+msgid "RemoteProvider_help_sme"
+msgstr "Kann ohne vorhandenes Spezialwissen in Arbeitssicherheit verwendet werden."
+
+#. Default: "The language of the linked contents"
+#: content/RemoteProvider.py
+msgid "RemoteProvider_help_remote_language"
+msgstr "Sprache, in der der verlinkte Inhalt vorliegt."
+
+#. Default: "The Title of the Organisation as it should show up in the search results."
+#: content/Provider.py
+msgid "RemoteProvider_help_title"
+msgstr "Titel der Organisation wie er in den Suchergebnissen auftauchen soll."
+
+#. Default: "The web address where you can reach the providers homepage."
+#: content/Provider.py
+msgid "RemoteProvider_help_remoteUrl"
+msgstr "Webadresse unter der die Homepage des Anbieters erreichbar ist."
+
+#. Default: "Also valid for the following tasks. Click to add a new entry."
+#: content/RemoteProvider.py
+msgid "RemoteProvider_help_workplace"
+msgstr "Auch gültig für die folgenden Aufgaben. Bitte fügen Sie einen Eintrag pro Zeile hinzu."
+
+#. Default: "Address"
+#: content/Provider.py
+msgid "RemoteProvider_label_address"
+msgstr "Adresse"
+
+#. Default: "Applicable Countries"
+#: content/RemoteProvider.py
+msgid "RemoteProvider_label_applicable_countries"
+msgstr "Zutreffende Länder"
+
+#. Default: "Category"
+#: content/Provider.py
+msgid "RemoteProvider_label_providerCategory"
+msgstr "Kategorie"
+
+#. Default: "Contact Name"
+#: content/Provider.py
+msgid "RemoteProvider_label_contact_name"
+msgstr "Name der Kontaktperson."
+
+#. Default: "Contact_url"
+#: content/Provider.py
+msgid "RemoteProvider_label_contact_url"
+msgstr "URL"
+
+#. Default: "Contents of the Product"
+#: content/RemoteProvider.py
+msgid "RemoteProvider_label_contents"
+msgstr "Inhalte des Produkts"
+
+#. Default: "Country"
+#: content/Provider.py
+#: content/RemoteProvider.py
+msgid "RemoteProvider_label_country"
+msgstr "Land"
+
+#. Default: "Last Changed"
+#: ../skins/riskassessmentlink_templates/riskassessmentlink_view.pt
+msgid "RemoteProvider_label_date_changed"
+msgstr "Zuletzt geändert"
+
+#. Default: "Description"
+#: content/RemoteProvider.py
+#: content/Provider.py
+msgid "RemoteProvider_label_description"
+msgstr "Beschreibung"
+
+#. Default: "Fax"
+#: content/Provider.py
+msgid "RemoteProvider_label_fax"
+msgstr "Fax"
+
+#. Default: "Language"
+#: ../skins/riskassessmentlink_templates/riskassessmentlink_view.pt
+msgid "RemoteProvider_label_language"
+msgstr "Sprache"
+
+#. Default: "Medium"
+#: content/RemoteProvider.py
+msgid "RemoteProvider_label_medium"
+msgstr "Medium"
+
+#. Default: "Sector"
+#: content/RemoteProvider.py
+msgid "RemoteProvider_label_nace"
+msgstr "Sektor"
+
+#. Default: "Name"
+#: content/Provider.py
+msgid "RemoteProvider_label_name"
+msgstr "Name"
+
+#. Default: "Occupation"
+#: content/RemoteProvider.py
+msgid "RemoteProvider_label_occupation"
+msgstr "Berufsgruppe"
+
+#. Default: "Organisation"
+#: content/Provider.py
+msgid "RemoteProvider_label_organisation"
+msgstr "Organisation"
+
+#. Default: "Phone"
+#: content/Provider.py
+msgid "RemoteProvider_label_phone"
+msgstr "Telefon"
+
+#. Default: "Price (in Euro)"
+#: content/RemoteProvider.py
+msgid "RemoteProvider_label_price"
+msgstr "Kosten (in Euro)"
+
+#. Default: "Provider"
+#: content/RemoteProvider.py
+msgid "RemoteProvider_label_provider"
+msgstr "Anbieter"
+
+#. Default: "Providers"
+#: content/RemoteProvider.py
+msgid "RemoteProvider_label_providers"
+msgstr "Anbieter"
+
+#. Default: "Remarks"
+#: content/RemoteProvider.py
+msgid "RemoteProvider_label_remarks"
+msgstr "Bemerkungen"
+
+#. Default: "Risk Factors"
+#: content/RemoteProvider.py
+msgid "RemoteProvider_label_riskfactors"
+msgstr "Gefährdungsfaktoren"
+
+#. Default: "Sector"
+#: content/RemoteProvider.py
+msgid "RemoteProvider_label_sector"
+msgstr "Branche"
+
+#. Default: "Recommended for small companies"
+#: content/RemoteProvider.py
+msgid "RemoteProvider_label_small_company"
+msgstr "Für Kleinbetriebe empfohlen"
+
+#. Default: "Recommended for small companies"
+#: content/RemoteProvider.py
+msgid "RemoteProvider_label_sme"
+msgstr "Für Kleinbetriebe empfohlen"
+
+#. Default: "Remote Language"
+#: content/RemoteProvider.py
+msgid "RemoteProvider_label_remote_language"
+msgstr "Sprache des Ziels."
+
+#. Default: "Title"
+#: content/RemoteProvider.py
+#: content/Provider.py
+msgid "RemoteProvider_label_title"
+msgstr "Titel"
+
+#. Default: "Url"
+#: content/RemoteProvider.py
+#: content/Provider.py
+msgid "RemoteProvider_label_remoteUrl"
+msgstr "Url"
+
+#. Default: "Workplace/Activity"
+#: content/RemoteProvider.py
+msgid "RemoteProvider_label_workplace"
+msgstr "Arbeitsplatz / Tätigkeit"
+
+#. Default: "Details"
+#: ../skins/riskassessmentlink_templates/portlet_riskassessmentlink_details.pt
+msgid "box_details"
+msgstr "Details"
+
+#. Default: "Detailed Search"
+#: ../skins/riskassessmentlink_templates/riskassessmentlink_db_view.pt
+msgid "heading_detail_search"
+msgstr "Detailsuche"
+
+#. Default: "Affects the following workplaces"
+#: ../skins/riskassessmentlink_templates/riskassessmentlink_view.pt
+msgid "label_affects_workplaces"
+msgstr "Betrifft die folgenden Arbeitsplätze / Tätigkeiten"
+
+#. Default: "Select..."
+#: filter_macros
+msgid "label_any_language"
+msgstr "Auswählen..."
+
+#. Default: "Contents of this action help"
+#: ../skins/riskassessmentlink_templates/portlet_riskassessmentlink_details.pt
+msgid "label_contents"
+msgstr "Inhalte dieser Handlungshilfe"
+
+#. Default: "Country"
+#: filter_macros
+msgid "label_country"
+msgstr "Land"
+
+#. Default: "Occupations"
+#: ../skins/riskassessmentlink_templates/riskassessmentlink_view.pt
+msgid "label_occupation"
+msgstr "Berufsgruppe(n)"
+
+#. Default: "Provider"
+#: ../skins/riskassessmentlink_templates/riskassessmentlink_view.pt
+msgid "label_provider"
+msgstr ""
+
+#. Default: "Sector"
+#: ../skins/riskassessmentlink_templates/riskassessmentlink_view.pt
+msgid "label_sector"
+msgstr "Branche(n)"
+
+#. Default: "Select..."
+#: filter_macros
+msgid "label_select"
+msgstr "Auswählen..."
+
+#. Default: "Remote Language"
+#: filter_macros
+msgid "label_remote_language"
+msgstr "Sprache des Ziels"
+
+#. Default: "Title"
+#: ../skins/riskassessmentlink_templates/riskassessmentlink_db_view.pt
+msgid "label_title"
+msgstr "Titel"
+
+#. Default: "Go to action help"
+#: ../skins/riskassessmentlink_templates/portlet_riskassessmentlink_details.pt
+msgid "link_to_actionhelp"
+msgstr "Zur Handlungshilfe"
+
+msgid "Provider"
+msgstr "Anbieter"
+
+
+#. Default: "My Links"
+#: ../portlets/myral.pt
+msgid "box_myral"
+msgstr "Meine Links"
+
