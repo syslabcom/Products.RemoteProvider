@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
-version = '1.2.1'
+version = '1.3.0'
 
 long_description = (
     read('README.txt')
@@ -17,11 +17,6 @@ long_description = (
     '**************\n'
     + '\n' +
     read('CHANGES.txt')
-    + '\n' +
-    'Detailed Documentation\n'
-    '**********************\n'
-    + '\n' +
-    read('Products', 'RemoteProvider', 'README.txt')
     + '\n' +
     'Contributors\n'
     '************\n'
@@ -66,3 +61,4 @@ setup(name='Products.RemoteProvider',
       # -*- entry_points -*- 
       """,
       )
+
