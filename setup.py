@@ -27,9 +27,6 @@ long_description = (
     '********\n'
     )
 
-tests_require=['zope.testing',
-              ]
-
 setup(name='Products.RemoteProvider',
       version=version,
       description="Remote Provider Content Type",
@@ -54,11 +51,13 @@ setup(name='Products.RemoteProvider',
       install_requires=['setuptools',
                         'Products.LinguaPlone',
                         ],
-      tests_require=tests_require,
-      extras_require=dict(tests=tests_require),
-      test_suite = 'Products.RemoteProvider.tests.test_docs.test_suite',
+      extras_require={
+          'test': [
+              'plone.app.testing',
+              'mock',
+          ],
+      },
       entry_points="""
-      # -*- entry_points -*- 
+      # -*- entry_points -*-
       """,
       )
-

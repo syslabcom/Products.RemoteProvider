@@ -1,52 +1,40 @@
-"""Test setup for integration and functional tests.
-
-When we import PloneTestCase and then call setupPloneSite(), all of
-Plone's products are loaded, and a Plone site will be created. This
-happens at module level, which makes it faster to run each test, but
-slows down test runner startup.
-"""
-
-
-from Testing import ZopeTestCase as ztc
-from Products.PloneTestCase import PloneTestCase as ptc
-
-from Products.Five import fiveconfigure, zcml
-from Products.PloneTestCase import layer
-
-SiteLayer = layer.PloneSite
-
-class RemoteProviderLayer(SiteLayer):
-    @classmethod
-    def setUp(cls):
-        ztc.installProduct('RemoteProvider')
-        ptc.setupPloneSite(products=['RemoteProvider'])
-        SiteLayer.setUp()
-
-class TestCase(ptc.PloneTestCase):
-    """We use this base class for all the tests in this package. If
-    necessary, we can put common utility or setup code in here. This
-    applies to unit test cases.
-    """
-    layer = RemoteProviderLayer
-
-class FunctionalTestCase(ptc.FunctionalTestCase):
-    """We use this class for functional integration tests that use
-    doctest syntax. Again, we can put basic common utility or setup
-    code in here.
-    """
-    layer = RemoteProviderLayer
-
-    class Session(dict):
-        def set(self, key, value):
-            self[key] = value
-
-    def _setup(self):
-        ptc.FunctionalTestCase._setup(self)
-        self.app.REQUEST['SESSION'] = self.Session()
+from plone.app.testing import FunctionalTesting
+from plone.app.testing import IntegrationTesting
+from plone.app.testing import PLONE_FIXTURE
+from plone.app.testing import PloneSandboxLayer
+from plone.app.testing import applyProfile
+from plone.testing import z2
 
 
-    def afterSetUp(self):
-        roles = ('Member', 'Contributor')
-        self.portal.portal_membership.addMember('contributor',
-                                                'secret',
-                                                roles, [])
+class RemoteProvider(PloneSandboxLayer):
+
+    defaultBases = (PLONE_FIXTURE,)
+
+    def setUpZope(self, app, configurationContext):
+        import Products.ATVocabularyManager
+        self.loadZCML('configure.zcml', package=Products.ATVocabularyManager)
+        import Products.RemoteProvider
+        self.loadZCML('configure.zcml', package=Products.RemoteProvider)
+
+        z2.installProduct(app, 'Products.ATVocabularyManager')
+        z2.installProduct(app, 'Products.RemoteProvider')
+
+    def setUpPloneSite(self, portal):
+        # Needed to make skins work
+        applyProfile(portal, 'Products.CMFPlone:plone')
+
+        applyProfile(portal, 'Products.ATVocabularyManager:default')
+        applyProfile(portal, 'Products.RemoteProvider:default')
+
+    def tearDownZope(self, app):
+        z2.uninstallProduct(app, 'Products.ATVocabularyManager')
+        z2.uninstallProduct(app, 'Products.RemoteProvider')
+
+
+REMOTEPROVIDER_FIXTURE = RemoteProvider()
+INTEGRATION_TESTING = IntegrationTesting(
+    bases=(REMOTEPROVIDER_FIXTURE,),
+    name="RemoteProvider:Integration")
+FUNCTIONAL_TESTING = FunctionalTesting(
+    bases=(REMOTEPROVIDER_FIXTURE,),
+    name="RemoteProvider:Functional")
