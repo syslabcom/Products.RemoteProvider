@@ -37,4 +37,3 @@ class RemoteProviderRetriever(object):
             self.context.setRemoteUrl(newurl)
         gocept.linkchecker.utils.updateAllRichTextFields(
             oldurl, newurl, self.context)
-

@@ -1,10 +1,10 @@
 from plone.theme.interfaces import IDefaultPloneLayer
-from zope.interface import Interface, Attribute
-from plone.portlets.interfaces import IPortletManager
+from zope.interface import Interface
+
 
 class IThemeSpecific(IDefaultPloneLayer):
-    """Marker interface that defines a Zope 3 skin layer.
-    """
+    """Marker interface that defines a Zope 3 skin layer."""
+
 
 class IVocabularyHelper(Interface):
     """Interface that holds verious methods for working with vocaularies"""

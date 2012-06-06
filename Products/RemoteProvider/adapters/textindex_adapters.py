@@ -1,5 +1,4 @@
 from zope.component import adapts
-from zope.interface import implements
 
 from Products.RemoteProvider.content.interfaces import IProvider
 
@@ -9,15 +8,12 @@ except ImportError:
     from Products.TextIndexNG3.adapters.cmf_adapters import CMFContentAdapter
 
 from zopyx.txng3.core.content import IndexContentCollector as ICC
-from zopyx.txng3.core.interfaces import IIndexableContent
 
 
 class RemoteProviderContentAdapter(CMFContentAdapter):
-
-    """An adapter for RemoteProvider files.
-    """
+    """An adapter for RemoteProvider files."""
     adapts(IProvider)
-    
+
     def indexableContent(self, fields):
         icc = ICC()
         if 'getId' in fields:
@@ -31,7 +27,6 @@ class RemoteProviderContentAdapter(CMFContentAdapter):
         if 'getRemoteUrl' in fields:
             self.addRemoteUrlField(icc)
         return icc
-
 
     def addRemoteUrlField(self, icc):
         remote_url = self._c(self.context.getRemoteUrl())

@@ -36,7 +36,7 @@ ADD_CONTENT_PERMISSIONS = {
     'Provider': 'RemoteProvider: Add Provider',
 }
 
-setDefaultRoles('RemoteProvider: Add Provider', ('Manager','Owner'))
+setDefaultRoles('RemoteProvider: Add Provider', ('Manager', 'Owner'))
 
 product_globals = globals()
 

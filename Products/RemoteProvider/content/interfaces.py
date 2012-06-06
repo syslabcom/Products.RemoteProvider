@@ -11,4 +11,3 @@ class IProvider(Interface):
 
 ##code-section FOOT
 ##/code-section FOOT
-
